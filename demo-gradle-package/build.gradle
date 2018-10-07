@@ -1,0 +1,22 @@
+dependencies {
+    // Project reference
+    compile project(':demo-gradle-core')
+	compile project(':demo-gradle-domain')
+    
+}
+
+apply plugin: 'application'
+apply plugin: 'com.github.johnrengelman.shadow'
+
+mainClassName = 'com.demo.gradle.DemoGradle'
+
+//jar{
+//manifest.attributes "Main-Class"： "com.demo.gradle.DemoGradle"
+//}
+
+
+shadowJar {
+   baseName = 'demo-gradle-final'
+   classifier = null
+   version = null
+}
