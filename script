@@ -1,1 +1,7 @@
 sysctl -a|grep tcp_keepalive
+/proc/sys/net/ipv4/tcp_synack_retries
+/proc/sys/net/ipv4/tcp_max_syn_backlog
+
+http://veithen.io/2014/01/01/how-tcp-backlog-works-in-linux.html
+
+ulimit //check limit of threads/IO/socket
